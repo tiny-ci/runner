@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-    ctx := context.Background()
     cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
     if err != nil {
         panic(err)
